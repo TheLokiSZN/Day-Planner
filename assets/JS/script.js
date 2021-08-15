@@ -16,7 +16,7 @@ $(document).ready(function () {
         // create some kind of timeOut value that removes the notification
         setTimeout(function() {
             $('.notification').removeClass('show')
-        },5000)
+        }, 5000)
     })
     // create time updater function()
     function hour() {
@@ -50,14 +50,14 @@ $(document).ready(function () {
     hour();
     // retrieve localStorage and render items to the correct rows
     var interval = setInterval(hour, 10000)
-    $('#Hour-9, .description').val(localStorage.getItem('Hour-9')) 
-    $('#Hour-10, .description').val(localStorage.getItem('Hour-10'))
-    $('#Hour-11, .description').val(localStorage.getItem('Hour-11'))
-    $('#Hour-12, .description').val(localStorage.getItem('Hour-12'))
-    $('#Hour-14, .description').val(localStorage.getItem('Hour-14'))
-    $('#Hour-15, .description').val(localStorage.getItem('Hour-15'))
-    $('#Hour-16, .description').val(localStorage.getItem('Hour-16'))
-    $('#Hour-17, .description').val(localStorage.getItem('Hour-17'))
+    $('#Hour-9, .description').val(localStorage.getItem('#Hour-9')) 
+    $('#Hour-10, .description').val(localStorage.getItem('#Hour-10'))
+    $('#Hour-11, .description').val(localStorage.getItem('#Hour-11'))
+    $('#Hour-12, .description').val(localStorage.getItem('#Hour-12'))
+    $('#Hour-14, .description').val(localStorage.getItem('#Hour-14'))
+    $('#Hour-15, .description').val(localStorage.getItem('#Hour-15'))
+    $('#Hour-16, .description').val(localStorage.getItem('#Hour-16'))
+    $('#Hour-17, .description').val(localStorage.getItem('#Hour-17'))
     console.log(interval);
 
     $('#currentDay').text(moment().format('MMMM Do YYYY'))
